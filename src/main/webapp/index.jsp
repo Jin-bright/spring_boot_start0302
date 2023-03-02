@@ -147,7 +147,8 @@ document.querySelector("#btn-menu").addEventListener("click", (e) => {
 const renderMenuTable = (selector, data) => {
  	
   const div = document.querySelector(selector);
-	
+
+  div.innerHTML = ""; //초기화
   let html = `
 		<table class='table table-hover'>
 			<thead>
